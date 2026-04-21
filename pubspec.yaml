@@ -1,0 +1,106 @@
+name: amal
+description: "Amal — Islamic impact platform. Earn Noor Coins, grow your Jannah Garden."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.13.1
+  firebase_auth: ^5.5.2
+  cloud_firestore: ^5.6.7
+  cloud_functions: ^5.4.4
+  firebase_storage: ^12.4.5
+  firebase_messaging: ^15.2.5
+  firebase_analytics: ^11.4.4
+
+  # Auth
+  google_sign_in: ^6.2.2
+  sign_in_with_apple: ^6.1.4
+
+  # Internationalisation
+  intl: ^0.20.2
+
+  # State management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Navigation
+  go_router: ^14.8.1
+
+  # Garden engine
+  flame: ^1.22.0
+
+  # Ads
+  google_mobile_ads: ^5.3.0
+
+  # Offline / caching
+  shared_preferences: ^2.3.5
+  cached_network_image: ^3.4.1
+
+  # HTTP client (AlAdhan prayer times API)
+  http: ^1.2.2
+
+  # Location & prayer
+  geolocator: ^13.0.2
+  permission_handler: ^11.4.0
+
+  # Local notification scheduling (Azan + prayer reminders)
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
+
+  # Qibla
+  flutter_compass: ^0.8.0
+
+  # Audio (azan)
+  audioplayers: ^6.4.0
+
+  # Biometric login
+  local_auth: ^2.3.0
+
+  # Video (YWTL / Soul Stack)
+  video_player: ^2.9.2
+
+  # Animations
+  lottie: ^3.3.1
+
+  # Sharing (referral)
+  share_plus: ^10.1.4
+
+  # Temp directory for share screenshots
+  path_provider: ^2.1.5
+
+  # Local storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # In-app purchases (temporarily disabled — native assets build issue on Flutter 3.41.6)
+  # in_app_purchase: ^3.2.0
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.13
+  riverpod_generator: ^2.6.1
+  # hive_generator omitted — incompatible with riverpod_generator analyzer version
+  # Use Hive without @HiveType annotations (manual TypeAdapters instead)
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/animations/
+    - assets/audio/
+    - assets/images/

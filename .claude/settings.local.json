@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter --version)",
+      "Bash(flutter pub:*)",
+      "Bash(flutter analyze:*)",
+      "Bash(flutter gen-l10n:*)",
+      "Bash(flutter build:*)",
+      "Bash(ls /Users/mahi/Desktop/ibadah/lib/core/l10n/*.arb)",
+      "Bash(flutterfire configure:*)",
+      "Bash(export PATH=\"$PATH\":\"$HOME/.pub-cache/bin\")",
+      "Bash(/opt/homebrew/bin/brew --version)",
+      "Bash(/usr/local/bin/brew --version)",
+      "Bash(/opt/homebrew/bin/brew install:*)",
+      "Bash(export PATH=\"$PATH:/opt/homebrew/bin:$HOME/.pub-cache/bin\")",
+      "Bash(firebase login:*)"
+    ]
+  }
+}

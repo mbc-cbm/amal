@@ -1,0 +1,1395 @@
+{
+  "@@locale": "en",
+
+  "appName": "Amal",
+  "@appName": { "description": "App name" },
+
+  "tagline": "Every good deed counts",
+  "@tagline": { "description": "Short tagline" },
+
+  "welcomeTagline": "Every action. Every intention. Every day.",
+  "@welcomeTagline": { "description": "Full onboarding tagline" },
+
+  "tapAnywhereToContinue": "Tap anywhere to continue",
+  "@tapAnywhereToContinue": { "description": "Welcome screen hint" },
+
+  "noorCoins": "Noor Coins",
+  "@noorCoins": { "description": "Currency name" },
+
+  "noorCoinBalance": "{count} Noor Coins",
+  "@noorCoinBalance": {
+    "description": "Formatted balance",
+    "placeholders": { "count": { "type": "int", "format": "decimalPattern" } }
+  },
+
+  "signInTitle": "Join Amal",
+  "@signInTitle": { "description": "Sign in screen heading" },
+
+  "signInSubtitle": "Create your account to begin",
+  "@signInSubtitle": { "description": "Sign in screen subheading" },
+
+  "signIn": "Sign In",
+  "@signIn": { "description": "Sign in label" },
+
+  "signUp": "Sign Up",
+  "@signUp": { "description": "Sign up label" },
+
+  "signOut": "Sign Out",
+  "@signOut": { "description": "Sign out label" },
+
+  "continueWithGoogle": "Continue with Google",
+  "@continueWithGoogle": { "description": "Google sign-in button" },
+
+  "continueWithApple": "Continue with Apple",
+  "@continueWithApple": { "description": "Apple sign-in button" },
+
+  "emailAndPassword": "Email & Password",
+  "@emailAndPassword": { "description": "Email auth button" },
+
+  "emailLabel": "Email",
+  "@emailLabel": { "description": "Email field label" },
+
+  "passwordLabel": "Password",
+  "@passwordLabel": { "description": "Password field label" },
+
+  "confirmPasswordLabel": "Confirm Password",
+  "@confirmPasswordLabel": { "description": "Confirm password field label" },
+
+  "createAccount": "Create Account",
+  "@createAccount": { "description": "Create account button" },
+
+  "alreadyHaveAccount": "Already have an account? Sign In",
+  "@alreadyHaveAccount": { "description": "Switch to sign-in link" },
+
+  "noAccount": "Don't have an account? Sign Up",
+  "@noAccount": { "description": "Switch to sign-up link" },
+
+  "forgotPassword": "Forgot Password?",
+  "@forgotPassword": { "description": "Forgot password link" },
+
+  "resetPassword": "Reset Password",
+  "@resetPassword": { "description": "Reset password button" },
+
+  "resetPasswordSent": "Reset link sent to {email}",
+  "@resetPasswordSent": {
+    "description": "Confirmation after reset email sent",
+    "placeholders": { "email": { "type": "String" } }
+  },
+
+  "biometricSignIn": "Sign in with Face ID / Fingerprint",
+  "@biometricSignIn": { "description": "Biometric sign-in button" },
+
+  "enableBiometric": "Enable Face ID / Fingerprint",
+  "@enableBiometric": { "description": "Enable biometric prompt title" },
+
+  "enableBiometricSubtitle": "Sign in faster next time with your biometrics",
+  "@enableBiometricSubtitle": { "description": "Enable biometric prompt subtitle" },
+
+  "biometricPrompt": "Authenticate to enter Amal",
+  "@biometricPrompt": { "description": "Biometric auth reason string" },
+
+  "usePinInstead": "Use PIN instead",
+  "@usePinInstead": { "description": "Fallback from biometric" },
+
+  "selectLanguageTitle": "Choose Your Language",
+  "@selectLanguageTitle": { "description": "Language selection heading" },
+
+  "selectLanguageSubtitle": "You can change this anytime in Settings",
+  "@selectLanguageSubtitle": { "description": "Language selection subheading" },
+
+  "languageEnglish": "English",
+  "@languageEnglish": { "description": "English language option" },
+
+  "languageBengali": "বাংলা",
+  "@languageBengali": { "description": "Bengali language option — always in Bengali script" },
+
+  "languageUrdu": "اردو",
+  "@languageUrdu": { "description": "Urdu language option — always in Urdu script" },
+
+  "languageArabic": "العربية",
+  "@languageArabic": { "description": "Arabic language option — always in Arabic script" },
+
+  "prayerTraditionTitle": "Your Prayer Tradition",
+  "@prayerTraditionTitle": { "description": "Prayer tradition screen heading" },
+
+  "prayerTraditionSubtitle": "This determines your Azan audio and prayer calculation method",
+  "@prayerTraditionSubtitle": { "description": "Prayer tradition explanation" },
+
+  "sunni": "Sunni",
+  "@sunni": { "description": "Sunni tradition label" },
+
+  "shia": "Shia",
+  "@shia": { "description": "Shia tradition label" },
+
+  "continueButton": "Continue",
+  "@continueButton": { "description": "Generic continue button" },
+
+  "calculationMethodTitle": "Calculation Method",
+  "@calculationMethodTitle": { "description": "Calculation method screen heading" },
+
+  "calculationMethodSubtitle": "Select the method used to calculate prayer times in your region",
+  "@calculationMethodSubtitle": { "description": "Calculation method explanation" },
+
+  "profileSetupTitle": "Set Up Your Profile",
+  "@profileSetupTitle": { "description": "Profile setup heading" },
+
+  "profileSetupSubtitle": "Tell us your name — you can always change it later",
+  "@profileSetupSubtitle": { "description": "Profile setup subheading" },
+
+  "nameLabel": "Your Name",
+  "@nameLabel": { "description": "Name field label" },
+
+  "addPhoto": "Add Photo",
+  "@addPhoto": { "description": "Add photo button" },
+
+  "changePhoto": "Change Photo",
+  "@changePhoto": { "description": "Change photo button" },
+
+  "skip": "Skip",
+  "@skip": { "description": "Skip button" },
+
+  "saveAndContinue": "Save & Continue",
+  "@saveAndContinue": { "description": "Save and continue button" },
+
+  "notificationTitle": "Stay Connected",
+  "@notificationTitle": { "description": "Notification screen heading" },
+
+  "notificationDescription": "Prayer times, Soul Stack reminders, YWTL impact videos, streak reminders, and garden alerts",
+  "@notificationDescription": { "description": "Notification permission description" },
+
+  "allowNotifications": "Allow Notifications",
+  "@allowNotifications": { "description": "Allow notifications button" },
+
+  "maybeLater": "Maybe Later",
+  "@maybeLater": { "description": "Decline notifications button" },
+
+  "welcomeToAmalTitle": "Welcome, {name}",
+  "@welcomeToAmalTitle": {
+    "description": "Personalized welcome heading",
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+  "impactMessage": "Every time you use Amal, real people receive sadaqa. Your watch time funds real change.",
+  "@impactMessage": { "description": "Impact statement on welcome complete screen" },
+
+  "enterAmal": "Enter Amal",
+  "@enterAmal": { "description": "CTA button on welcome complete screen" },
+
+  "errorEmailAlreadyInUse": "This email is already registered. Try signing in.",
+  "@errorEmailAlreadyInUse": { "description": "Auth error" },
+
+  "errorWeakPassword": "Password must be at least 8 characters.",
+  "@errorWeakPassword": { "description": "Auth error" },
+
+  "errorInvalidEmail": "Please enter a valid email address.",
+  "@errorInvalidEmail": { "description": "Auth error" },
+
+  "errorWrongPassword": "Incorrect password. Please try again.",
+  "@errorWrongPassword": { "description": "Auth error" },
+
+  "errorUserNotFound": "No account found with this email.",
+  "@errorUserNotFound": { "description": "Auth error" },
+
+  "errorNetworkRequest": "Connection error. Check your internet and try again.",
+  "@errorNetworkRequest": { "description": "Network error" },
+
+  "errorSignInFailed": "Sign-in failed. Please try again.",
+  "@errorSignInFailed": { "description": "Generic sign-in error" },
+
+  "passwordsDoNotMatch": "Passwords do not match.",
+  "@passwordsDoNotMatch": { "description": "Validation error" },
+
+  "errorGeneric": "Something went wrong. Please try again.",
+  "@errorGeneric": { "description": "Generic error" },
+
+  "loading": "Loading…",
+  "@loading": { "description": "Loading label" },
+
+  "retry": "Retry",
+  "@retry": { "description": "Retry button" },
+
+  "home": "Home",
+  "@home": { "description": "Home tab" },
+
+  "quickActions": "Quick Actions",
+  "@quickActions": { "description": "Section header for feature grid on home screen" },
+
+  "earn": "Earn",
+  "@earn": { "description": "Earn tab" },
+
+  "garden": "Garden",
+  "@garden": { "description": "Garden tab" },
+
+  "community": "Community",
+  "@community": { "description": "Community label" },
+
+  "prayerTime": "Prayer Time",
+  "@prayerTime": { "description": "Prayer feature label" },
+
+  "qibla": "Qibla",
+  "@qibla": { "description": "Qibla feature label" },
+
+  "qiblaPermissionNeeded": "Location permission is needed to determine the Qibla direction. Please enable location services.",
+  "@qiblaPermissionNeeded": { "description": "Shown when location is unavailable for Qibla" },
+
+  "qiblaOpenSettings": "Open Settings",
+  "@qiblaOpenSettings": { "description": "Button to open location settings from Qibla screen" },
+
+  "qiblaCalibrationPrompt": "Compass accuracy is low. Move your phone in a figure-8 pattern to calibrate.",
+  "@qiblaCalibrationPrompt": { "description": "Prompt shown when magnetometer needs calibration" },
+
+  "qiblaKaabaLabel": "Kaaba",
+  "@qiblaKaabaLabel": { "description": "Label under the Kaaba icon on Qibla screen" },
+
+  "qiblaBearingLabel": "Qibla Bearing",
+  "@qiblaBearingLabel": { "description": "Label under the bearing degrees on Qibla screen" },
+
+  "tasbeeh": "Tasbeeh",
+  "@tasbeeh": { "description": "Tasbeeh feature label" },
+
+  "jannahGarden": "Jannah Garden",
+  "@jannahGarden": { "description": "Garden feature label" },
+
+  "noorWallet": "Noor Wallet",
+  "@noorWallet": { "description": "Wallet feature label" },
+
+  "soulStack": "Soul Stack",
+  "@soulStack": { "description": "Soul Stack feature label" },
+
+  "ywtl": "You Watch, They Live",
+  "@ywtl": { "description": "YWTL feature label" },
+
+  "amalTracker": "Amal Tracker",
+  "@amalTracker": { "description": "Amal Tracker feature label" },
+
+  "amalGallery": "Amal Gallery",
+  "@amalGallery": { "description": "Amal Gallery feature label" },
+
+  "ramadan": "Ramadan",
+  "@ramadan": { "description": "Ramadan feature label" },
+
+  "ramadanCountdown": "Ramadan Countdown",
+  "@ramadanCountdown": { "description": "Ramadan countdown heading" },
+
+  "ramadanDaysRemaining": "Ramadan begins in {days} days, {hours} hours, {minutes} minutes",
+  "@ramadanDaysRemaining": {
+    "description": "Countdown to Ramadan",
+    "placeholders": {
+      "days": { "type": "int" },
+      "hours": { "type": "int" },
+      "minutes": { "type": "int" }
+    }
+  },
+
+  "ramadanSuhoor": "Suhoor",
+  "@ramadanSuhoor": { "description": "Suhoor label" },
+
+  "ramadanIftar": "Iftar",
+  "@ramadanIftar": { "description": "Iftar label" },
+
+  "ramadanLogFast": "Log Today's Fast",
+  "@ramadanLogFast": { "description": "Button to log fast" },
+
+  "ramadanFastLogged": "Fast Logged",
+  "@ramadanFastLogged": { "description": "Fast already logged label" },
+
+  "ramadanTarawih": "Tarawih",
+  "@ramadanTarawih": { "description": "Tarawih label" },
+
+  "ramadanTarawihLogged": "Tarawih Completed",
+  "@ramadanTarawihLogged": { "description": "Tarawih logged label" },
+
+  "ramadanFastsCompleted": "{count} Fasts Completed",
+  "@ramadanFastsCompleted": {
+    "description": "Running fasts completed count",
+    "placeholders": { "count": { "type": "int" } }
+  },
+
+  "ramadanLastTenNights": "Last 10 Nights",
+  "@ramadanLastTenNights": { "description": "Last 10 nights section heading" },
+
+  "ramadanDay": "Day {day}",
+  "@ramadanDay": {
+    "description": "Ramadan day label",
+    "placeholders": { "day": { "type": "int" } }
+  },
+
+  "ramadanMubarak": "Ramadan Mubarak",
+  "@ramadanMubarak": { "description": "Ramadan greeting" },
+
+  "ramadanLogTarawih": "Log Tarawih",
+  "@ramadanLogTarawih": { "description": "Button to log tarawih" },
+
+  "ramadanSeekLaylatulQadr": "Seek Laylatul Qadr in the odd nights",
+  "@ramadanSeekLaylatulQadr": { "description": "Laylatul Qadr reminder" },
+
+  "profile": "Profile",
+  "@profile": { "description": "Profile label" },
+
+  "settings": "Settings",
+  "@settings": { "description": "Settings label" },
+
+  "prayerLogged": "Prayer logged! +{coins} Noor Coins",
+  "@prayerLogged": {
+    "description": "Prayer logged confirmation",
+    "placeholders": { "coins": { "type": "int" } }
+  },
+
+  "fastLogged": "Fast logged! +{coins} Noor Coins",
+  "@fastLogged": {
+    "description": "Fast logged confirmation",
+    "placeholders": { "coins": { "type": "int" } }
+  },
+
+  "tasbeehComplete": "Tasbeeh complete! +{coins} Noor Coins",
+  "@tasbeehComplete": {
+    "description": "Tasbeeh complete confirmation",
+    "placeholders": { "coins": { "type": "int" } }
+  },
+
+  "fajr": "Fajr",
+  "@fajr": { "description": "Fajr prayer name" },
+
+  "dhuhr": "Dhuhr",
+  "@dhuhr": { "description": "Dhuhr prayer name" },
+
+  "asr": "Asr",
+  "@asr": { "description": "Asr prayer name" },
+
+  "maghrib": "Maghrib",
+  "@maghrib": { "description": "Maghrib prayer name" },
+
+  "isha": "Isha",
+  "@isha": { "description": "Isha prayer name" },
+
+  "sunrise": "Sunrise",
+  "@sunrise": { "description": "Sunrise label" },
+
+  "homeGreeting": "Assalamu Alaikum, {name}",
+  "@homeGreeting": {
+    "description": "Home screen greeting",
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+  "yourBalance": "Your Balance",
+  "@yourBalance": { "description": "Balance label on home screen" },
+
+  "setLocationPrompt": "Tap to set your location for prayer times",
+  "@setLocationPrompt": { "description": "Prompt when location not set" },
+
+  "prayerProgress": "{done} of {total} prayers",
+  "@prayerProgress": {
+    "description": "Prayer completion progress",
+    "placeholders": {
+      "done": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+
+  "viewAllPrayers": "View All Prayers",
+  "@viewAllPrayers": { "description": "Link to full prayer screen" },
+
+  "prayerTimesTitle": "Prayer Times",
+  "@prayerTimesTitle": { "description": "Prayer screen title" },
+
+  "todaysPrayers": "Today's Prayers",
+  "@todaysPrayers": { "description": "Section heading" },
+
+  "modeSilent": "Silent",
+  "@modeSilent": { "description": "Silent notification mode" },
+
+  "modeNotification": "Notify",
+  "@modeNotification": { "description": "Push notification mode" },
+
+  "modeAzan": "Azan",
+  "@modeAzan": { "description": "Azan audio notification mode" },
+
+  "notificationSettings": "Notification Settings",
+  "@notificationSettings": { "description": "Notification settings heading" },
+
+  "changeLocation": "Change",
+  "@changeLocation": { "description": "Change location button" },
+
+  "useGps": "Use GPS",
+  "@useGps": { "description": "Use GPS button" },
+
+  "cityLabel": "City",
+  "@cityLabel": { "description": "City input label" },
+
+  "countryLabel": "Country",
+  "@countryLabel": { "description": "Country input label" },
+
+  "search": "Search",
+  "@search": { "description": "Search button" },
+
+  "usingCachedData": "Using cached data",
+  "@usingCachedData": { "description": "Cache notice" },
+
+  "lastUpdated": "Updated {age}",
+  "@lastUpdated": {
+    "description": "Last updated timestamp",
+    "placeholders": { "age": { "type": "String" } }
+  },
+
+  "tasbeehSubhanallah": "Subhanallah",
+  "@tasbeehSubhanallah": { "description": "Dhikr name" },
+
+  "tasbeehAlhamdulillah": "Alhamdulillah",
+  "@tasbeehAlhamdulillah": { "description": "Dhikr name" },
+
+  "tasbeehAllahuAkbar": "Allahu Akbar",
+  "@tasbeehAllahuAkbar": { "description": "Dhikr name" },
+
+  "tasbeehAstaghfirullah": "Astaghfirullah",
+  "@tasbeehAstaghfirullah": { "description": "Dhikr name" },
+
+  "tasbeehTarget": "Target",
+  "@tasbeehTarget": { "description": "Target count label" },
+
+  "tasbeehReset": "Reset",
+  "@tasbeehReset": { "description": "Reset button label" },
+
+  "tasbeehSessionComplete": "Session Complete",
+  "@tasbeehSessionComplete": { "description": "Completion overlay heading" },
+
+  "tasbeehSessionHistory": "Session History",
+  "@tasbeehSessionHistory": { "description": "History section heading" },
+
+  "tasbeehTotalCount": "Total Count",
+  "@tasbeehTotalCount": { "description": "Total count stat label" },
+
+  "tasbeehLongestSession": "Longest Session",
+  "@tasbeehLongestSession": { "description": "Longest session stat label" },
+
+  "tasbeehCoinsAwarded": "+{coins} Noor Coins",
+  "@tasbeehCoinsAwarded": {
+    "description": "Coins awarded message",
+    "placeholders": { "coins": { "type": "int" } }
+  },
+
+  "amalCategoryAll": "All",
+  "@amalCategoryAll": { "description": "All categories filter" },
+
+  "amalCategoryPrayer": "Prayer",
+  "@amalCategoryPrayer": { "description": "Prayer category" },
+
+  "amalCategoryFamily": "Family",
+  "@amalCategoryFamily": { "description": "Family category" },
+
+  "amalCategoryCommunity": "Community",
+  "@amalCategoryCommunity": { "description": "Community category" },
+
+  "amalCategorySelf": "Self",
+  "@amalCategorySelf": { "description": "Self category" },
+
+  "amalCategoryKnowledge": "Knowledge",
+  "@amalCategoryKnowledge": { "description": "Knowledge category" },
+
+  "amalCategoryCharity": "Charity",
+  "@amalCategoryCharity": { "description": "Charity category" },
+
+  "amalSearchHint": "Search good deeds...",
+  "@amalSearchHint": { "description": "Search field placeholder" },
+
+  "amalNoResults": "No Amals found",
+  "@amalNoResults": { "description": "Empty state message" },
+
+  "amalNoorCoinsReward": "{coins} NC",
+  "@amalNoorCoinsReward": {
+    "description": "Noor Coins reward badge",
+    "placeholders": { "coins": { "type": "int" } }
+  },
+
+  "amalCompleteButton": "Complete This Amal",
+  "@amalCompleteButton": { "description": "Completion button" },
+
+  "amalCompleted": "Completed",
+  "@amalCompleted": { "description": "Completed badge" },
+
+  "amalCompletedTimes": "Completed {count} times",
+  "@amalCompletedTimes": {
+    "description": "Completion count",
+    "placeholders": { "count": { "type": "int" } }
+  },
+
+  "amalSource": "Source",
+  "@amalSource": { "description": "Source label" },
+
+  "amalDifficultyEasy": "Easy",
+  "@amalDifficultyEasy": { "description": "Easy difficulty" },
+
+  "amalDifficultyMedium": "Medium",
+  "@amalDifficultyMedium": { "description": "Medium difficulty" },
+
+  "amalDifficultyHigh": "High",
+  "@amalDifficultyHigh": { "description": "High difficulty" },
+
+  "amalOneTime": "One-time",
+  "@amalOneTime": { "description": "One-time completion type" },
+
+  "amalDaily": "Daily",
+  "@amalDaily": { "description": "Daily completion type" },
+
+  "amalWeekly": "Weekly",
+  "@amalWeekly": { "description": "Weekly completion type" },
+
+  "amalOngoing": "Ongoing",
+  "@amalOngoing": { "description": "Ongoing completion type" },
+
+  "amalWatchToComplete": "Watch to complete",
+  "@amalWatchToComplete": { "description": "Video watch prompt" },
+
+  "trackerMyTracker": "My Tracker",
+  "@trackerMyTracker": { "description": "Tracker tab label" },
+
+  "trackerFavourites": "Favourites",
+  "@trackerFavourites": { "description": "Favourites tab label" },
+
+  "trackerTodaysAmal": "Today's Amal",
+  "@trackerTodaysAmal": { "description": "Amal of the day heading" },
+
+  "trackerDailyGoal": "Daily Goal",
+  "@trackerDailyGoal": { "description": "Daily goal heading" },
+
+  "trackerSetGoal": "Set a daily goal",
+  "@trackerSetGoal": { "description": "Prompt to set goal" },
+
+  "trackerGoalProgress": "{done} of {total} completed today",
+  "@trackerGoalProgress": {
+    "description": "Daily goal progress",
+    "placeholders": {
+      "done": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+
+  "trackerTotalAmals": "Total Amals",
+  "@trackerTotalAmals": { "description": "Total amals stat" },
+
+  "trackerTotalCoins": "Noor Coins Earned",
+  "@trackerTotalCoins": { "description": "Total coins from amals stat" },
+
+  "trackerDailyStreak": "Daily Streak",
+  "@trackerDailyStreak": { "description": "Current daily streak" },
+
+  "trackerLongestDaily": "Best Daily",
+  "@trackerLongestDaily": { "description": "Longest daily streak" },
+
+  "trackerWeeklyStreak": "Weekly Streak",
+  "@trackerWeeklyStreak": { "description": "Current weekly streak" },
+
+  "trackerLongestWeekly": "Best Weekly",
+  "@trackerLongestWeekly": { "description": "Longest weekly streak" },
+
+  "trackerRecentActivity": "Recent Activity",
+  "@trackerRecentActivity": { "description": "Recent completions heading" },
+
+  "trackerEncouragement": "Every good deed counts. Start today!",
+  "@trackerEncouragement": { "description": "Encouragement when no goal set" },
+
+  "trackerNoCompletions": "No completions yet. Begin your journey!",
+  "@trackerNoCompletions": { "description": "Empty state for recent activity" },
+
+  "trackerNoFavourites": "No favourites yet. Tap the heart on any Amal to save it here.",
+  "@trackerNoFavourites": { "description": "Empty state for favourites tab" },
+
+  "soulStackRise": "Rise — Morning",
+  "@soulStackRise": { "description": "Rise stack label" },
+
+  "soulStackShine": "Shine — Afternoon",
+  "@soulStackShine": { "description": "Shine stack label" },
+
+  "soulStackGlow": "Glow — Night",
+  "@soulStackGlow": { "description": "Glow stack label" },
+
+  "soulStackProgress": "{done}/5 videos",
+  "@soulStackProgress": {
+    "description": "Stack video progress",
+    "placeholders": { "done": { "type": "int" } }
+  },
+
+  "soulStackCompletedTimes": "Completed {count} times today",
+  "@soulStackCompletedTimes": {
+    "description": "Stack completion count",
+    "placeholders": { "count": { "type": "int" } }
+  },
+
+  "soulStackStartStack": "Start Stack",
+  "@soulStackStartStack": { "description": "Start stack button" },
+
+  "soulStackStart": "Start",
+  "@soulStackStart": { "description": "Start button in flow" },
+
+  "soulStackReady": "Ready",
+  "@soulStackReady": { "description": "Ready button in flow" },
+
+  "soulStackSwipeUp": "Swipe up to continue",
+  "@soulStackSwipeUp": { "description": "Swipe instruction" },
+
+  "soulStackWhatIsRise": "Rise is your morning dua stack. Watch 5 short videos of beautiful duas to begin your day with intention. Your watch time funds real-world sadaqa.",
+  "@soulStackWhatIsRise": { "description": "Rise explanation" },
+
+  "soulStackWhatIsShine": "Shine is your afternoon dua stack. Take a mindful pause with 5 duas. Every second you watch contributes to sadaqa for those in need.",
+  "@soulStackWhatIsShine": { "description": "Shine explanation" },
+
+  "soulStackWhatIsGlow": "Glow is your evening dua stack. End your day with 5 beautiful duas. Your watch time generates sadaqa that changes real lives.",
+  "@soulStackWhatIsGlow": { "description": "Glow explanation" },
+
+  "soulStackMashaAllah": "MashaAllah!",
+  "@soulStackMashaAllah": { "description": "Achievement title" },
+
+  "soulStackCoinsEarned": "+{coins} Noor Coins",
+  "@soulStackCoinsEarned": {
+    "description": "Coins earned message",
+    "placeholders": { "coins": { "type": "int" } }
+  },
+
+  "soulStackGardenAccess": "6 hours of Jannah Garden access added",
+  "@soulStackGardenAccess": { "description": "Garden access message" },
+
+  "soulStackSadaqaMessage": "Your watch time contributed to real-world sadaqa",
+  "@soulStackSadaqaMessage": { "description": "Sadaqa contribution message" },
+
+  "soulStackWatchYwtl": "Watch today's impact video",
+  "@soulStackWatchYwtl": { "description": "YWTL button on achievement" },
+
+  "soulStackDone": "Done",
+  "@soulStackDone": { "description": "Done button" },
+
+  "gardenLocked": "Complete a Soul Stack to enter your garden (6 hours access per stack)",
+  "@gardenLocked": { "description": "Garden locked message" },
+
+  "gardenGoToSoulStack": "Go to Soul Stack",
+  "@gardenGoToSoulStack": { "description": "Button to navigate to Soul Stack from locked garden" },
+
+  "gardenLocalSaveWarning": "Your garden is saved on this device. If you delete the app, you will lose your garden. Cloud backup coming soon.",
+  "@gardenLocalSaveWarning": { "description": "First-time warning about local-only save" },
+
+  "gardenIUnderstand": "I understand",
+  "@gardenIUnderstand": { "description": "Acknowledge garden warning button" },
+
+  "gardenAccessRemaining": "Garden access: {time} remaining",
+  "@gardenAccessRemaining": {
+    "description": "Timer showing remaining garden access",
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "gardenPremiumOpen": "Premium — Always Open",
+  "@gardenPremiumOpen": { "description": "Premium user garden status" },
+
+  "gardenInnerCircle": "Inner Circle",
+  "@gardenInnerCircle": { "description": "Inner circle toggle label" },
+
+  "gardenOuterCircle": "Outer Circle",
+  "@gardenOuterCircle": { "description": "Outer circle toggle label" },
+
+  "gardenAssetStore": "Asset Store",
+  "@gardenAssetStore": { "description": "Asset store heading" },
+
+  "gardenRestoreWithCoins": "Restore with Noor Coins",
+  "@gardenRestoreWithCoins": { "description": "Restore asset with coins button" },
+
+  "gardenRestoreInstantly": "Restore Instantly",
+  "@gardenRestoreInstantly": { "description": "Restore asset instantly button" },
+
+  "gardenInsufficientCoins": "Not enough Noor Coins — complete a Soul Stack to earn more",
+  "@gardenInsufficientCoins": { "description": "Insufficient coins error" },
+
+  "gardenShareAmal": "Share Amal",
+  "@gardenShareAmal": { "description": "Share referral button" },
+
+  "gardenReferralCode": "Your referral code",
+  "@gardenReferralCode": { "description": "Referral code label" },
+
+  "gardenIntensityLow": "Plant seeds. Invite others to begin their journey.",
+  "@gardenIntensityLow": { "description": "Low intensity message" },
+
+  "gardenIntensityMedium": "Your sadaqa zariyah is growing. MashaAllah.",
+  "@gardenIntensityMedium": { "description": "Medium intensity message" },
+
+  "gardenIntensityHigh": "A beautiful rainforest, kept alive by those you brought to Amal.",
+  "@gardenIntensityHigh": { "description": "High intensity message" },
+
+  "gardenIntensityMax": "SubhanAllah. Your sadaqa zariyah flows like a great river.",
+  "@gardenIntensityMax": { "description": "Max intensity message" },
+
+  "gardenPlace": "Place",
+  "@gardenPlace": { "description": "Place asset button" },
+
+  "walletBalance": "Balance",
+  "@walletBalance": { "description": "Wallet balance heading" },
+
+  "walletTotalEarned": "Total earned all time: {coins}",
+  "@walletTotalEarned": {
+    "description": "Total coins ever earned",
+    "placeholders": { "coins": { "type": "int" } }
+  },
+
+  "walletTransactionHistory": "Transaction History",
+  "@walletTransactionHistory": { "description": "Transaction history section heading" },
+
+  "walletLoadMore": "Load More",
+  "@walletLoadMore": { "description": "Load more transactions button" },
+
+  "walletHowToEarn": "How to Earn Noor Coins",
+  "@walletHowToEarn": { "description": "Earning guide section heading" },
+
+  "walletHowToSpend": "What can I spend Noor Coins on?",
+  "@walletHowToSpend": { "description": "Spending guide section heading" },
+
+  "walletOpenGarden": "Open Jannah Garden",
+  "@walletOpenGarden": { "description": "Navigate to garden button" },
+
+  "walletNoTransactions": "No transactions yet. Start earning Noor Coins!",
+  "@walletNoTransactions": { "description": "Empty state for transactions" },
+
+  "ywtlWatchToday": "Watch Today's Impact",
+  "@ywtlWatchToday": { "description": "YWTL watch button" },
+
+  "ywtlWatchAgain": "Watch Again",
+  "@ywtlWatchAgain": { "description": "YWTL rewatch button" },
+
+  "ywtlCollectCoins": "Collect Your Noor Coins",
+  "@ywtlCollectCoins": { "description": "YWTL collect coins button" },
+
+  "ywtlCoinsCollected": "+{coins} Noor Coins collected!",
+  "@ywtlCoinsCollected": {
+    "description": "YWTL coins collected confirmation",
+    "placeholders": { "coins": { "type": "int", "format": "decimalPattern" } }
+  },
+
+  "ywtlAvailableIn": "In {days}d",
+  "@ywtlAvailableIn": {
+    "description": "YWTL days until available",
+    "placeholders": { "days": { "type": "int" } }
+  },
+
+  "ywtlPreviousWeeks": "Previous weeks available on our YouTube channel",
+  "@ywtlPreviousWeeks": { "description": "YWTL previous weeks note" },
+
+  "ywtlThisWeek": "This Week",
+  "@ywtlThisWeek": { "description": "YWTL this week heading" },
+
+  "ywtlMonday": "Mon",
+  "@ywtlMonday": { "description": "Monday abbreviation" },
+
+  "ywtlTuesday": "Tue",
+  "@ywtlTuesday": { "description": "Tuesday abbreviation" },
+
+  "ywtlWednesday": "Wed",
+  "@ywtlWednesday": { "description": "Wednesday abbreviation" },
+
+  "ywtlThursday": "Thu",
+  "@ywtlThursday": { "description": "Thursday abbreviation" },
+
+  "ywtlFriday": "Fri",
+  "@ywtlFriday": { "description": "Friday abbreviation" },
+
+  "ywtlSaturday": "Sat",
+  "@ywtlSaturday": { "description": "Saturday abbreviation" },
+
+  "ywtlSunday": "Sun",
+  "@ywtlSunday": { "description": "Sunday abbreviation" },
+
+  "settingsNotifications": "Notifications",
+  "@settingsNotifications": { "description": "Notifications section heading" },
+
+  "settingsPrayerReminders": "Prayer Reminders",
+  "@settingsPrayerReminders": { "description": "Prayer reminders subsection" },
+
+  "settingsSoulStackReminders": "Soul Stack Reminders",
+  "@settingsSoulStackReminders": { "description": "Soul Stack reminders subsection" },
+
+  "settingsYwtlVideo": "YWTL New Video",
+  "@settingsYwtlVideo": { "description": "YWTL video reminder" },
+
+  "settingsStreakAtRisk": "Streak At Risk",
+  "@settingsStreakAtRisk": { "description": "Streak at risk reminder" },
+
+  "settingsAssetFading": "Asset Fading Warning",
+  "@settingsAssetFading": { "description": "Asset fading warning reminder" },
+
+  "settingsPrayerSettings": "Prayer Settings",
+  "@settingsPrayerSettings": { "description": "Prayer settings section heading" },
+
+  "settingsPrayerTradition": "Prayer Tradition",
+  "@settingsPrayerTradition": { "description": "Prayer tradition setting" },
+
+  "settingsCalculationMethod": "Calculation Method",
+  "@settingsCalculationMethod": { "description": "Calculation method setting" },
+
+  "settingsLocation": "Location",
+  "@settingsLocation": { "description": "Location setting" },
+
+  "settingsUpdateLocation": "Update Location",
+  "@settingsUpdateLocation": { "description": "Update location button" },
+
+  "settingsAzanAudio": "Azan Audio",
+  "@settingsAzanAudio": { "description": "Azan audio setting" },
+
+  "settingsAppSettings": "App Settings",
+  "@settingsAppSettings": { "description": "App settings section heading" },
+
+  "settingsLanguage": "Language",
+  "@settingsLanguage": { "description": "Language setting" },
+
+  "settingsTheme": "Theme",
+  "@settingsTheme": { "description": "Theme setting" },
+
+  "settingsThemeLight": "Light",
+  "@settingsThemeLight": { "description": "Light theme option" },
+
+  "settingsThemeDark": "Dark",
+  "@settingsThemeDark": { "description": "Dark theme option" },
+
+  "settingsThemeSystem": "System",
+  "@settingsThemeSystem": { "description": "System theme option" },
+
+  "settingsHaptic": "Haptic Feedback",
+  "@settingsHaptic": { "description": "Haptic feedback setting" },
+
+  "settingsSound": "Sound Effects",
+  "@settingsSound": { "description": "Sound effects setting" },
+
+  "settingsBiometric": "Biometric Login",
+  "@settingsBiometric": { "description": "Biometric login setting" },
+
+  "settingsStreakAtRiskDesc": "Fires at 8:00 PM if streak is at risk",
+  "@settingsStreakAtRiskDesc": { "description": "Streak at risk description" },
+
+  "settingsAssetFadingDesc": "Warns when garden assets are fading",
+  "@settingsAssetFadingDesc": { "description": "Asset fading description" },
+
+  "settingsAzanMakkah": "Makkah Qari",
+  "@settingsAzanMakkah": { "description": "Makkah azan option" },
+
+  "settingsAzanMadinah": "Madinah Qari",
+  "@settingsAzanMadinah": { "description": "Madinah azan option" },
+
+  "settingsAzanAlAqsa": "Al-Aqsa Qari",
+  "@settingsAzanAlAqsa": { "description": "Al-Aqsa azan option" },
+
+  "settingsAzanMishary": "Mishary Rashid",
+  "@settingsAzanMishary": { "description": "Mishary Rashid azan option" },
+
+  "profileMemberSince": "Member since",
+  "@profileMemberSince": { "description": "Member since label" },
+
+  "profileFree": "Free",
+  "@profileFree": { "description": "Free subscription badge" },
+
+  "profilePremium": "Premium",
+  "@profilePremium": { "description": "Premium subscription badge" },
+
+  "profileReferralCode": "Referral Code",
+  "@profileReferralCode": { "description": "Referral code label" },
+
+  "profileTotalEarned": "Total Noor Coins Earned",
+  "@profileTotalEarned": { "description": "Total earned label" },
+
+  "profileCommunityImpact": "Community Impact",
+  "@profileCommunityImpact": { "description": "Community impact section heading" },
+
+  "profileDataUpdated": "Data updated",
+  "@profileDataUpdated": { "description": "Data updated footer for FTC compliance" },
+
+  "profileSubscribe": "Subscribe",
+  "@profileSubscribe": { "description": "Subscribe button" },
+
+  "profileManageSubscription": "Manage Subscription",
+  "@profileManageSubscription": { "description": "Manage subscription button" },
+
+  "profileRestorePurchases": "Restore Purchases",
+  "@profileRestorePurchases": { "description": "Restore purchases button" },
+
+  "profileMonthly": "Monthly",
+  "@profileMonthly": { "description": "Monthly plan label" },
+
+  "profileAnnual": "Annual",
+  "@profileAnnual": { "description": "Annual plan label" },
+
+  "profileLogOut": "Log Out",
+  "@profileLogOut": { "description": "Log out button" },
+
+  "profileLogOutConfirm": "Are you sure you want to log out?",
+  "@profileLogOutConfirm": { "description": "Log out confirmation message" },
+
+  "profileDeleteAccount": "Delete Account",
+  "@profileDeleteAccount": { "description": "Delete account button" },
+
+  "profileDeleteWarning": "This action is permanent. All your data, Noor Coins, and progress will be lost. Are you sure?",
+  "@profileDeleteWarning": { "description": "Delete account warning text" },
+
+  "profileDeleteConfirmType": "Type DELETE to confirm account deletion",
+  "@profileDeleteConfirmType": { "description": "Delete confirmation instruction" },
+
+  "profileCancel": "Cancel",
+  "@profileCancel": { "description": "Cancel button" },
+
+  "profileSaveDiscount": "Save 17%",
+  "@profileSaveDiscount": { "description": "Annual plan discount label" },
+
+  "or": "or",
+  "@or": { "description": "Divider label between auth methods" },
+
+  "timeJustNow": "Just now",
+  "@timeJustNow": { "description": "Time ago label for very recent" },
+
+  "timeMinutesAgo": "{count}m ago",
+  "@timeMinutesAgo": { "description": "Minutes ago", "placeholders": { "count": { "type": "int" } } },
+
+  "timeHoursAgo": "{count}h ago",
+  "@timeHoursAgo": { "description": "Hours ago", "placeholders": { "count": { "type": "int" } } },
+
+  "timeDaysAgo": "{count}d ago",
+  "@timeDaysAgo": { "description": "Days ago", "placeholders": { "count": { "type": "int" } } },
+
+  "walletSourcePrayer": "Daily Prayer",
+  "@walletSourcePrayer": { "description": "Wallet transaction source label" },
+
+  "walletSourceFast": "Ramadan Fast",
+  "@walletSourceFast": { "description": "Wallet transaction source label" },
+
+  "walletSourceTasbeeh": "Tasbeeh Session",
+  "@walletSourceTasbeeh": { "description": "Wallet transaction source label" },
+
+  "walletSourceSoulStack": "Soul Stack",
+  "@walletSourceSoulStack": { "description": "Wallet transaction source label" },
+
+  "walletSourceYwtl": "YWTL Video",
+  "@walletSourceYwtl": { "description": "Wallet transaction source label" },
+
+  "walletSourceAmal": "Amal Completion",
+  "@walletSourceAmal": { "description": "Wallet transaction source label" },
+
+  "walletSourceGarden": "Garden Asset",
+  "@walletSourceGarden": { "description": "Wallet transaction source label" },
+
+  "walletSpendGarden": "Jannah Garden assets",
+  "@walletSpendGarden": { "description": "Spending guide label" },
+
+  "walletSpendRestore": "Restoring fading garden assets",
+  "@walletSpendRestore": { "description": "Spending guide label" },
+
+  "countdownDays": "DAYS",
+  "@countdownDays": { "description": "Countdown unit label" },
+
+  "countdownHours": "HRS",
+  "@countdownHours": { "description": "Countdown unit label" },
+
+  "countdownMinutes": "MIN",
+  "@countdownMinutes": { "description": "Countdown unit label" },
+
+  "remove": "Remove",
+  "@remove": { "description": "Remove action label" },
+
+  "restore": "Restore",
+  "@restore": { "description": "Restore action label" },
+
+  "info": "Info",
+  "@info": { "description": "Info action label" },
+
+  "ok": "OK",
+  "@ok": { "description": "OK button label" },
+
+  "restoreAsset": "Restore Asset",
+  "@restoreAsset": { "description": "Restore asset dialog title" },
+
+  "copiedToClipboard": "Copied to clipboard",
+  "@copiedToClipboard": { "description": "Clipboard copy confirmation" },
+
+  "ywtlWatchFullVideo": "Watch the full video to collect {coins} Noor Coins",
+  "@ywtlWatchFullVideo": { "description": "YWTL video instruction", "placeholders": { "coins": { "type": "int" } } },
+
+  "comingSoon": "Coming soon",
+  "@comingSoon": { "description": "Feature coming soon placeholder" },
+
+  "forgotPasswordTitle": "Reset Password",
+  "@forgotPasswordTitle": { "description": "Forgot password screen title" },
+
+  "forgotPasswordSubtitle": "Enter your email address and we'll send you a link to reset your password",
+  "@forgotPasswordSubtitle": { "description": "Forgot password instruction" },
+
+  "sendResetLink": "Send Reset Link",
+  "@sendResetLink": { "description": "Send password reset email button" },
+
+  "resetLinkSent": "Password reset link sent! Check your email.",
+  "@resetLinkSent": { "description": "Success message after sending reset link" },
+
+  "resetLinkError": "Failed to send reset link. Please check your email and try again.",
+  "@resetLinkError": { "description": "Error message for reset link failure" },
+
+  "gardenVisit": "Visit Your Jannah Garden",
+  "@gardenVisit": { "description": "Garden widget subtitle on home screen" },
+
+  "soulStackSubtitle": "Earn Noor Coins through daily dua stacks",
+  "@soulStackSubtitle": { "description": "Soul Stack widget subtitle on home screen" },
+
+  "amalTrackerSubtitle": "Track your good deeds & build streaks",
+  "@amalTrackerSubtitle": { "description": "Amal Tracker widget subtitle on home screen" },
+
+  "gardenAwaitsTitle": "Your Garden Awaits",
+  "@gardenAwaitsTitle": { "description": "Access prompt sheet title" },
+
+  "gardenAwaitsBody": "Complete a Soul Stack or watch a video to unlock your garden for 6 hours.",
+  "@gardenAwaitsBody": { "description": "Access prompt sheet body" },
+
+  "gardenSubscribe": "Subscribe",
+  "@gardenSubscribe": { "description": "Subscribe button on access prompt" },
+
+  "gardenCompleteSoulStack": "Complete Soul Stack",
+  "@gardenCompleteSoulStack": { "description": "Soul stack button on access prompt" },
+
+  "gardenWatchVideo": "Watch a Video",
+  "@gardenWatchVideo": { "description": "Watch video button on access prompt" },
+
+  "gardenNotNow": "Not now",
+  "@gardenNotNow": { "description": "Dismiss access prompt" },
+
+  "gardenPremiumBadge": "Premium — Full Access",
+  "@gardenPremiumBadge": { "description": "Premium badge in timer overlay" },
+
+  "gardenWatchToUnlock": "Watch a video to unlock",
+  "@gardenWatchToUnlock": { "description": "Gentle invitation when no timer active" },
+
+  "shopGalleryTitle": "Sacred Garden Gallery",
+  "@shopGalleryTitle": { "description": "Shop screen title" },
+
+  "shopFeatured": "Featured",
+  "@shopFeatured": { "description": "Featured asset badge" },
+
+  "shopAddToGarden": "Add to Garden",
+  "@shopAddToGarden": { "description": "Purchase/add button" },
+
+  "shopInGarden": "In Garden",
+  "@shopInGarden": { "description": "Already owned badge" },
+
+  "shopEarnMoreNc": "Earn More NC",
+  "@shopEarnMoreNc": { "description": "Insufficient balance button" },
+
+  "shopAll": "All",
+  "@shopAll": { "description": "All filter tab" },
+
+  "shopTrees": "Trees",
+  "@shopTrees": { "description": "Trees filter tab" },
+
+  "shopWater": "Water",
+  "@shopWater": { "description": "Water filter tab" },
+
+  "shopFruits": "Fruits",
+  "@shopFruits": { "description": "Fruits filter tab" },
+
+  "shopCreatures": "Creatures",
+  "@shopCreatures": { "description": "Creatures filter tab" },
+
+  "shopStructures": "Structures",
+  "@shopStructures": { "description": "Structures filter tab" },
+
+  "shopSacred": "Sacred",
+  "@shopSacred": { "description": "Sacred filter tab" },
+
+  "shopUnderwater": "Underwater",
+  "@shopUnderwater": { "description": "Underwater filter tab" },
+
+  "shopSky": "Sky",
+  "@shopSky": { "description": "Sky filter tab" },
+
+  "shopHayatTitle": "Restore Your Paradise",
+  "@shopHayatTitle": { "description": "Hayat section title" },
+
+  "shopHayatDrop": "Hayat Drop",
+  "@shopHayatDrop": { "description": "Single restore product" },
+
+  "shopHayatBloom": "Hayat Bloom",
+  "@shopHayatBloom": { "description": "Full restore product" },
+
+  "shopNcTitle": "Add Noor Coins",
+  "@shopNcTitle": { "description": "NC IAP section title" },
+
+  "shopStarterNoor": "Starter Noor",
+  "@shopStarterNoor": { "description": "1000 NC package" },
+
+  "shopHandfulNoor": "A Handful of Noor",
+  "@shopHandfulNoor": { "description": "5000 NC package" },
+
+  "shopGardensWorth": "A Garden's Worth",
+  "@shopGardensWorth": { "description": "10000 NC package" },
+
+  "shopBlessedHarvest": "The Blessed Harvest",
+  "@shopBlessedHarvest": { "description": "25000 NC package" },
+
+  "hayatLife": "Hayat · Life",
+  "@hayatLife": { "description": "Hayat subtitle" },
+
+  "hayatTagline": "Every garden needs care. Hayat brings yours back to life.",
+  "@hayatTagline": { "description": "Hayat description" },
+
+  "hayatDropTitle": "Hayat Drop",
+  "@hayatDropTitle": { "description": "Single asset restore" },
+
+  "hayatDropEffect": "Restores one chosen asset",
+  "@hayatDropEffect": { "description": "Drop effect description" },
+
+  "hayatBloomTitle": "Hayat Bloom",
+  "@hayatBloomTitle": { "description": "Full garden restore" },
+
+  "hayatBloomEffect": "Restores your entire garden",
+  "@hayatBloomEffect": { "description": "Bloom effect description" },
+
+  "hayatRestoreOne": "Restore One Asset",
+  "@hayatRestoreOne": { "description": "Drop action button" },
+
+  "hayatRestoreAll": "Restore Full Garden",
+  "@hayatRestoreAll": { "description": "Bloom action button" },
+
+  "hayatOr": "or",
+  "@hayatOr": { "description": "NC or USD separator" },
+
+  "hayatYourBalance": "Your balance: {balance} Noor Coins",
+  "@hayatYourBalance": { "description": "Balance display", "placeholders": { "balance": { "type": "int" } } },
+
+  "hayatSelectAsset": "Select an asset to restore",
+  "@hayatSelectAsset": { "description": "Asset selection prompt" },
+
+  "hayatRestoreThis": "Restore this?",
+  "@hayatRestoreThis": { "description": "Contextual restore prompt" },
+
+  "plantConfirmTitle": "Plant {name} for {price} Noor Coins?",
+  "@plantConfirmTitle": { "description": "Plant confirmation", "placeholders": { "name": { "type": "String" }, "price": { "type": "int" } } },
+
+  "plantIt": "Plant It",
+  "@plantIt": { "description": "Confirm plant button" },
+
+  "notNow": "Not Now",
+  "@notNow": { "description": "Cancel button" },
+
+  "earnMorePrompt": "Earn more Noor Coins to plant this gift",
+  "@earnMorePrompt": { "description": "Insufficient balance message" },
+
+  "sellConfirmTitle": "Sell {name} for {price} NC?",
+  "@sellConfirmTitle": { "description": "Sell confirmation", "placeholders": { "name": { "type": "String" }, "price": { "type": "int" } } },
+
+  "sellConfirmBody": "This removes it from your garden.",
+  "@sellConfirmBody": { "description": "Sell warning body" },
+
+  "sellButton": "Sell",
+  "@sellButton": { "description": "Confirm sell button" },
+
+  "tapSlotToPlace": "Tap an empty slot to place your asset",
+  "@tapSlotToPlace": { "description": "Placement prompt" },
+
+  "moveAsset": "Move",
+  "@moveAsset": { "description": "Move menu option" },
+
+  "sellAsset": "Sell",
+  "@sellAsset": { "description": "Sell menu option" },
+
+  "qmDua": "Dua",
+  "@qmDua": { "description": "Question mark content type badge" },
+
+  "qmHistory": "Islamic History",
+  "@qmHistory": { "description": "Question mark content type badge" },
+
+  "qmWatchToDiscover": "Watch to discover your gift",
+  "@qmWatchToDiscover": { "description": "Question mark scroll prompt" },
+
+  "qmMomentPassed": "This moment passed. A new one will come.",
+  "@qmMomentPassed": { "description": "Gentle QM expiry toast" },
+
+  "qmDiscoveryWaiting": "Your discovery is still waiting",
+  "@qmDiscoveryWaiting": { "description": "QM reminder notification title" },
+
+  "qmDiscoveryBody": "You have time. A sacred gift is waiting for you in your garden.",
+  "@qmDiscoveryBody": { "description": "QM reminder notification body" },
+
+  "jazakAllahuKhairan": "JazakAllahu Khairan",
+  "@jazakAllahuKhairan": { "description": "Thank you in Islamic greeting" },
+
+  "sacredContentComingSoon": "Sacred content coming soon. JazakAllahu Khairan.",
+  "@sacredContentComingSoon": { "description": "Placeholder when video unavailable" },
+
+  "returnToGarden": "Return to Garden",
+  "@returnToGarden": { "description": "Return button from placeholder" },
+
+  "outerGardenTitle": "Your Outer Garden",
+  "@outerGardenTitle": { "description": "Outer garden explainer heading" },
+
+  "outerGardenExplainerBody": "Every person you invite to Amal plants a seed in your outer paradise. Every Amal they do — rain falls in your garden. Every person they invite — their Amal reaches you too. This is Sadaqa Zariyah. Good deeds that never stop.",
+  "@outerGardenExplainerBody": { "description": "Outer garden explainer body" },
+
+  "outerGardenExplainerSubtext": "Your referral network is infinite. Every deed echoes.",
+  "@outerGardenExplainerSubtext": { "description": "Outer garden explainer subtext" },
+
+  "outerGardenEnterButton": "Enter My Garden",
+  "@outerGardenEnterButton": { "description": "Enter outer garden button" },
+
+  "myNetwork": "My Network",
+  "@myNetwork": { "description": "Referral panel button" },
+
+  "copyLink": "Copy Link",
+  "@copyLink": { "description": "Copy referral link button" },
+
+  "linkCopied": "Copied!",
+  "@linkCopied": { "description": "Clipboard copy toast" },
+
+  "shareInvite": "Share",
+  "@shareInvite": { "description": "Share referral link button" },
+
+  "shareInviteMessage": "Join me in building paradise. Every good deed echoes. Start your Jannah Garden here:",
+  "@shareInviteMessage": { "description": "Referral share message" },
+
+  "directInvites": "Direct Invites",
+  "@directInvites": { "description": "Stat label" },
+
+  "directInvitesDesc": "People who joined through your link directly",
+  "@directInvitesDesc": { "description": "Stat description" },
+
+  "theirInvites": "Their Invites",
+  "@theirInvites": { "description": "Stat label" },
+
+  "theirInvitesDesc": "People invited by your direct invites",
+  "@theirInvitesDesc": { "description": "Stat description" },
+
+  "totalNetwork": "Total Network",
+  "@totalNetwork": { "description": "Stat label" },
+
+  "totalNetworkDesc": "Your complete network at every depth",
+  "@totalNetworkDesc": { "description": "Stat description" },
+
+  "totalNetworkAmals": "Total Amals",
+  "@totalNetworkAmals": { "description": "Stat label" },
+
+  "totalNetworkAmalsDesc": "Amals completed by everyone in your network",
+  "@totalNetworkAmalsDesc": { "description": "Stat description" },
+
+  "rainfallToday": "Rainfall Today",
+  "@rainfallToday": { "description": "Stat label" },
+
+  "rainfallTodayDesc": "Rain events from your network's activity today",
+  "@rainfallTodayDesc": { "description": "Stat description" },
+
+  "howItWorks": "How does this work?",
+  "@howItWorks": { "description": "Collapsible explainer title" },
+
+  "howItWorksBody": "Every Amal your network completes sends rain to your garden. The deeper the roots you plant — the more your paradise grows.",
+  "@howItWorksBody": { "description": "Referral explainer body" },
+
+  "levelAlRawdah": "Al-Rawdah",
+  "@levelAlRawdah": { "description": "Garden level 1 name" },
+
+  "levelAlFirdaws": "Al-Firdaws",
+  "@levelAlFirdaws": { "description": "Garden level 2 name" },
+
+  "levelAlNaim": "Al-Na'im",
+  "@levelAlNaim": { "description": "Garden level 3 name" },
+
+  "levelJannatAlMawa": "Jannat al-Ma'wa",
+  "@levelJannatAlMawa": { "description": "Garden level 4 name" },
+
+  "welcomeToLevel": "Welcome to {levelName}",
+  "@welcomeToLevel": { "description": "Level-up toast", "placeholders": { "levelName": { "type": "String" } } },
+
+  "verseLevel2En": "And give good tidings to those who believe",
+  "@verseLevel2En": { "description": "Quran 2:25 translation" },
+
+  "verseLevel3En": "Indeed, the righteous will be among gardens",
+  "@verseLevel3En": { "description": "Quran 15:45 translation" },
+
+  "verseLevel4En": "In it are rivers of water unaltered",
+  "@verseLevel4En": { "description": "Quran 47:15 translation" },
+
+  "architectViewLabel": "Architect View",
+  "@architectViewLabel": { "description": "Camera mode label" },
+  "immersionViewLabel": "Immersed",
+  "@immersionViewLabel": { "description": "Camera mode label" },
+  "plantSomething": "Plant Something",
+  "@plantSomething": { "description": "Empty garden CTA" },
+
+  "accessPromptTitle": "Your Garden Awaits",
+  "@accessPromptTitle": { "description": "Access prompt heading" },
+  "accessPromptBody": "Complete a Soul Stack or watch a video to unlock your garden for 6 hours.",
+  "@accessPromptBody": { "description": "Access prompt body" },
+  "accessSubscribeButton": "Subscribe",
+  "@accessSubscribeButton": { "description": "Access prompt subscribe" },
+  "accessSoulStackButton": "Complete Soul Stack",
+  "@accessSoulStackButton": { "description": "Access prompt soul stack" },
+  "accessYwtlButton": "Watch a Video",
+  "@accessYwtlButton": { "description": "Access prompt YWTL" },
+
+  "shopFeaturedLabel": "Featured This Week",
+  "@shopFeaturedLabel": { "description": "Featured asset section label" },
+  "shopFilterAll": "All",
+  "@shopFilterAll": { "description": "Shop filter tab" },
+  "shopFilterTrees": "Trees",
+  "@shopFilterTrees": { "description": "Shop filter tab" },
+  "shopFilterWater": "Water",
+  "@shopFilterWater": { "description": "Shop filter tab" },
+  "shopFilterFruits": "Fruits",
+  "@shopFilterFruits": { "description": "Shop filter tab" },
+  "shopFilterCreatures": "Creatures",
+  "@shopFilterCreatures": { "description": "Shop filter tab" },
+  "shopFilterStructures": "Structures",
+  "@shopFilterStructures": { "description": "Shop filter tab" },
+  "shopFilterSacred": "Sacred",
+  "@shopFilterSacred": { "description": "Shop filter tab" },
+  "shopFilterUnderwater": "Underwater",
+  "@shopFilterUnderwater": { "description": "Shop filter tab" },
+  "shopFilterSky": "Sky",
+  "@shopFilterSky": { "description": "Shop filter tab" },
+  "shopHayatTagline": "Every garden needs care. Hayat brings yours back to life.",
+  "@shopHayatTagline": { "description": "Hayat section tagline in shop" },
+  "hayatRestoreFull": "Restore Full Garden",
+  "@hayatRestoreFull": { "description": "Bloom action button" },
+
+  "plantingConfirmTitle": "Plant in Your Paradise?",
+  "@plantingConfirmTitle": { "description": "Planting confirmation heading" },
+  "plantingConfirmButton": "Plant It",
+  "@plantingConfirmButton": { "description": "Planting confirm button" },
+  "plantingNotNow": "Not Now",
+  "@plantingNotNow": { "description": "Planting cancel" },
+
+  "assetSellConfirm": "Sell {name} for {nc} Noor Coins?",
+  "@assetSellConfirm": { "description": "Sell confirmation", "placeholders": { "name": { "type": "String" }, "nc": { "type": "int" } } },
+  "assetSellRemovalWarning": "This removes it from your garden.",
+  "@assetSellRemovalWarning": { "description": "Sell removal warning" },
+  "assetSellButton": "Confirm Sale",
+  "@assetSellButton": { "description": "Sell confirm button" },
+
+  "questionMarkDua": "Dua",
+  "@questionMarkDua": { "description": "QM content type" },
+  "questionMarkHistory": "Islamic History",
+  "@questionMarkHistory": { "description": "QM content type" },
+  "questionMarkWatchToDiscover": "Watch to discover your gift",
+  "@questionMarkWatchToDiscover": { "description": "QM scroll prompt" },
+  "questionMarkExpired": "This moment passed. A new one will come.",
+  "@questionMarkExpired": { "description": "QM expiry toast" },
+  "questionMarkPending": "Your discovery is still waiting. You have time.",
+  "@questionMarkPending": { "description": "QM pending reminder" },
+  "discoveryJazakAllah": "JazakAllahu Khairan",
+  "@discoveryJazakAllah": { "description": "Post-discovery thank you" },
+
+  "outerGardenSubtitle": "Sadaqa Zariyah",
+  "@outerGardenSubtitle": { "description": "Outer garden Arabic subtitle" },
+  "outerGardenSkip": "Skip",
+  "@outerGardenSkip": { "description": "Outer garden explainer skip" },
+  "referralCopied": "Copied!",
+  "@referralCopied": { "description": "Referral link copy toast" },
+  "referralShareText": "Join me on Amal",
+  "@referralShareText": { "description": "Referral share prefix" },
+  "networkDirectInvites": "Direct Invites",
+  "@networkDirectInvites": { "description": "Referral stat" },
+  "networkTheirInvites": "Their Invites",
+  "@networkTheirInvites": { "description": "Referral stat" },
+  "networkTotal": "Total Network",
+  "@networkTotal": { "description": "Referral stat" },
+  "networkAmals": "Total Amals",
+  "@networkAmals": { "description": "Referral stat" },
+  "networkRainfallToday": "Rainfall Today",
+  "@networkRainfallToday": { "description": "Referral stat" },
+  "myNetworkButton": "My Network",
+  "@myNetworkButton": { "description": "Floating button label" },
+  "levelUpWelcome": "Welcome to {name}",
+  "@levelUpWelcome": { "description": "Level-up toast", "placeholders": { "name": { "type": "String" } } },
+  "gateSkip": "Skip",
+  "@gateSkip": { "description": "Gate animation skip button" }
+}

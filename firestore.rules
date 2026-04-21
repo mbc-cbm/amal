@@ -1,0 +1,201 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Helper functions ─────────────────────────────────────────────────────
+
+    /// True when the request is from a signed-in Firebase Auth user.
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    /// True when the signed-in user's uid matches the document's uid segment.
+    function isOwner(uid) {
+      return isAuthenticated() && request.auth.uid == uid;
+    }
+
+    /// Blocks any attempt to write the protected wallet fields from a client.
+    /// These fields are written exclusively by Cloud Functions (Admin SDK).
+    function doesNotTouchWalletFields() {
+      return !request.resource.data.diff(resource.data).affectedKeys()
+          .hasAny(['noorCoinBalance', 'totalNoorCoinsEarned']);
+    }
+
+    // ── users/{uid} ──────────────────────────────────────────────────────────
+    // Authenticated users may read and write their own document,
+    // EXCEPT for the protected wallet balance fields.
+    match /users/{uid} {
+      allow read: if isOwner(uid);
+      allow create: if isOwner(uid)
+        && !request.resource.data.keys()
+            .hasAny(['noorCoinBalance', 'totalNoorCoinsEarned']);
+      allow update: if isOwner(uid) && doesNotTouchWalletFields();
+      allow delete: if false; // never delete user documents from client
+
+      // ── users/{uid}/wallet_transactions ────────────────────────────────────
+      // Clients may READ their own transactions.
+      // NO client writes ever — Cloud Functions write via Admin SDK only.
+      match /wallet_transactions/{txId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+
+      // ── users/{uid}/gardenAssets ────────────────────────────────────────────
+      // Clients may READ their own garden assets.
+      // Cloud Functions write here when a purchase is completed.
+      match /gardenAssets/{assetId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+
+      // ── users/{uid}/prayerLog/{date} ────────────────────────────────────────
+      // Clients may READ their own prayer log.
+      // WRITE is blocked from clients — the updateNoorWallet Cloud Function
+      // writes prayerLog entries atomically alongside the wallet update,
+      // using the Admin SDK which bypasses these rules.
+      match /prayerLog/{date} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+
+      // ── users/{uid}/referrals/{referralId} ──────────────────────────────────
+      // Cloud Functions only — used by calculateRainforestIntensity.
+      match /referrals/{referralId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+
+      // ── users/{uid}/soulStackLog/{date} ─────────────────────────────────────
+      // Cloud Functions write completion records. Clients may read their own.
+      match /soulStackLog/{date} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+
+      // ── users/{uid}/ywtlLog/{logId} ─────────────────────────────────────────
+      // Clients read and write their own YWTL watch log entries.
+      match /ywtlLog/{logId} {
+        allow read: if isOwner(uid);
+        allow write: if isOwner(uid);
+      }
+
+      // ── users/{uid}/tasbeehLog/{logId} ──────────────────────────────────────
+      // Clients read and write their own tasbeeh session logs.
+      match /tasbeehLog/{logId} {
+        allow read: if isOwner(uid);
+        allow write: if isOwner(uid);
+      }
+
+      // ── users/{uid}/amalLog/{logId} ─────────────────────────────────────────
+      // Clients read their own amal completion log. Writes via Cloud Functions.
+      match /amalLog/{logId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+
+      // ── users/{uid}/favourites/{amalId} ─────────────────────────────────────
+      // Clients read and write their own favourites.
+      match /favourites/{amalId} {
+        allow read: if isOwner(uid);
+        allow write: if isOwner(uid);
+      }
+
+      // ── users/{uid}/gardenState ─────────────────────────────────────────────
+      // Inner garden state — read only by owner, no client writes.
+      match /gardenState/{document=**} {
+        allow read: if isOwner(uid);
+        allow write: if false; // Cloud Functions admin SDK only
+      }
+
+      // ── users/{uid}/discoveredAssets ─────────────────────────────────────────
+      // Discovered assets from question marks.
+      match /discoveredAssets/{discoveryId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+
+      // ── users/{uid}/hayatLog ────────────────────────────────────────────────
+      // Hayat (in-app purchase) transaction log.
+      match /hayatLog/{txnId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+
+      // ── users/{uid}/questionMarks ───────────────────────────────────────────
+      // Question marks placed in inner garden.
+      match /questionMarks/{qmId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+
+      // ── users/{uid}/gardenAccessTimer ───────────────────────────────────────
+      // Garden access timer — NEVER client-writable.
+      match /gardenAccessTimer/{document=**} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+
+      // ── users/{uid}/outerGardenStats ────────────────────────────────────────
+      // Outer garden stats and community impact.
+      match /outerGardenStats/{document=**} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+    }
+
+    // ── dailyStacks ──────────────────────────────────────────────────────────
+    // Generated by Cloud Functions (generateDailyStacks). Read-only for clients.
+    match /dailyStacks/{date} {
+      allow read: if isAuthenticated();
+      allow write: if false;
+
+      match /{stackName} {
+        allow read: if isAuthenticated();
+        allow write: if false;
+      }
+    }
+
+    // ── amals ────────────────────────────────────────────────────────────────
+    // The amals catalogue is read-only for all authenticated clients.
+    // Only backend / admin can write.
+    match /amals/{amalId} {
+      allow read: if isAuthenticated();
+      allow write: if false;
+    }
+
+    // ── assets ───────────────────────────────────────────────────────────────
+    // The assets catalogue is read-only for all authenticated clients.
+    match /assets/{assetId} {
+      allow read: if isAuthenticated();
+      allow write: if false;
+    }
+
+    // ── amalStats/communityImpact ─────────────────────────────────────────────
+    // Public read for community stats display.
+    // Backend writes only — never from a client.
+    match /amalStats/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // ── assetTemplates ─────────────────────────────────────────────────────────
+    // Global asset library — any authenticated user can read, no writes.
+    match /assetTemplates/{assetId} {
+      allow read: if isAuthenticated();
+      allow write: if false;
+    }
+
+    // ── questionMarkContent ──────────────────────────────────────────────────
+    // Global question mark video content — authenticated read, no writes.
+    match /questionMarkContent/{videoId} {
+      allow read: if isAuthenticated();
+      allow write: if false;
+    }
+
+    // ── Catch-all: deny everything not explicitly allowed ─────────────────────
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
